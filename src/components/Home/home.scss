@@ -1,0 +1,90 @@
+.home-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+  }
+  h1 {
+    color: white;
+    font-size: 53px;
+    font-weight: 400;
+    margin: 0;
+    font-family: 'Coolvetica';
+
+    &::before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        color: yellow;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -40px;
+        left: 15px;
+        opacity: 0.6;
+    }
+
+    &::after{
+       content: '<h1>';
+       font-family: 'La Belle Aurore' ;
+       color: yellow;
+       font-size: 18px;
+       position: absolute;
+       margin-top: -40px;
+       margin-left:  15px;
+       animation: fadeIn 1s 1.7s backwards;
+       -webkit-animation: fadeIn 1s 1.7s backwards;
+       opacity: 0.6;
+}
+
+    img {
+      width: 32px;
+      margin-left: 20px;
+      opacity: 0;
+      height: auto;
+      animation: rotateIn 1s linear both;
+      -webkit-animation: rotateIn 1s linear both;
+      animation-delay: 1.4s;
+}
+  }
+  h2{
+    color:  gray;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+    -webkit-animation: fadeIn 1s 1.8s backwards;
+}
+.flat-button{
+    color: yellow;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid yellow;
+    margin-top: 25px ;
+    float: left;
+    animation:  fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+    -webkit-animation:  fadeIn 1s 1.8s backwards;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    &:hover{
+        background: yellow;
+        color: gray;
+    }
+}
+
+}
